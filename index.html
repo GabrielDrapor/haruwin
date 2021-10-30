@@ -1,29 +1,123 @@
 <!DOCTYPE html>
-<!-- saved from url=(0047)file:///Users/drapor/Dropbox/haruwin/index.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+      @font-face {
+        font-family: "Integral CF";
+        src: url("IntegralCF-ExtraBold.otf") format("opentype");
+      }
+      body {
+        background-image: url("bg.png");
+        background-repeat: no-repeat;
+        margin: 0px;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: rgb(17, 17, 17);
+        --translation-color: inherit;
+      }
+      .headline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 90vw;
+      }
+      .headline .big {
+        color: white;
+        font-family: "Integral CF";
+        letter-spacing: 10px;
+        margin: 0;
+        font-size: 15vw;
+        text-shadow: #fff 1px 0 5px;
+      }
+      .headline .sub {
+        color: white;
+        font-size: 4vw;
+        font-family: arial black;
+        letter-spacing: 0.3vw;
+      }
+      .logo {
+        width: 15vw;
+        border-radius: 50%;
+        border: 10px solid #333;
+        align-self: flex-end;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+      }
+      .schedules {
+        display: flex;
+        justify-content: center;
+        background-color: #ffffffaa;
+        height: 25vh;
+        margin-top: 5vw;
+      }
+      .schedules .match {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20vh;
+        height: 15vh;
+        margin: 5vh 3vh 5vh 3vh;
+      }
+      .schedules .matchDate {
+        margin: 0 auto;
+        font-size: 1vmax;
+      }
+      .schedules .matchRival {
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 10px;
+        font-weight: 900;
+        font-size: 1.7vmax;
+      }
+      .schedules .matchStatus {
+        margin: 0 auto;
+        color: #00000090;
+        padding: 0vmax 0.6vmax 0vmax 0.6vmax;
+        background-color: #f5f5f5;
+        border: solid 1px transparent;
+        border-color: #d9d9d9;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 1.4vmax;
+      }
+      .matchStatus.finished {
+        background-color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="headline">
+        <img class="logo" src="haruwin_logo.jpg" />
+        <div class="big">HARUWIN</div>
+        <div class="sub">Est. 2021</div>
+      </div>
+      <div class="schedules">
 
-<style type="text/css">
-	@font-face {
-	  font-family: 'Made Tommy Outline';
-	  src: url('MADE TOMMY ExtraBold Outline_PERSONAL USE.otf') format('opentype');
-	}
-	@font-face {
-	  font-family: 'Made Tommy';
-	  src: url('MADE TOMMY ExtraBold_PERSONAL USE.otf') format('opentype');
-	}
-</style></head><body style="background-image: url(&quot;bg.png&quot;); background-repeat: no-repeat; margin: 0px; background-position: center center; background-attachment: fixed; background-size: cover; background-color: rgb(17, 17, 17); --translation-color: inherit;" class="vsc-initialized" cz-shortcut-listen="true">&gt;
-	<div style="
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-">
-
-		<div style="color: white;font-family: &#39;Made Tommy&#39;;letter-spacing: 10px;margin: 0;font-size: 15vw;">HARUWIN</div>
-		<div style="color: white;font-size: 4vw;font-family: arial black;letter-spacing: 10px;"> Est. 2021</div>
-	</div>
-
-
-<div style="position: fixed; left: 0px; top: 0px; z-index: 100000;"></div><div style="position: fixed; left: 0px; top: 0px; z-index: 100000;"></div>
-</body></html>
+        <div class="match">
+          <div class="matchDate">2021.10.24</div>
+          <div class="matchRival">vs 乌合之从</div>
+          <div class="matchStatus finished">已结束</div>
+        </div>
+        <div class="match">
+          <div class="matchDate">2021.10.31</div>
+          <div class="matchRival">vs 鸟舍之人</div>
+          <div class="matchStatus unfinished">未开始</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
