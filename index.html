@@ -14,23 +14,19 @@
         background-position: center center;
         background-attachment: fixed;
         background-size: cover;
-        background-color: rgb(17, 17, 17);
-        --translation-color: inherit;
       }
       .headline {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 50vh;
-        width: 90vw;
       }
       .headline .big {
         color: white;
         font-family: "Integral CF";
         letter-spacing: 10px;
         margin: 0;
-        font-size: 15vw;
+        font-size: 100px;
         text-shadow: #fff 1px 0 5px;
       }
       .headline .sub {
@@ -40,61 +36,42 @@
         letter-spacing: 0.3vw;
       }
       .logo {
-        width: 15vw;
+        width: 20vh;
         border-radius: 50%;
         border: 10px solid #333;
-        align-self: flex-end;
       }
       .main {
+        max-width: 800px;
+        margin: 0 auto;
+        top: 10vh;
+        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 100vh;
-        margin-left: 5vw;
-        margin-right: 5vw;
+        align-items: center;
       }
-      .schedules {
-        display: flex;
-        justify-content: center;
-        background-color: #ffffffaa;
-        height: 25vh;
-        margin-top: 5vw;
+      .site-logo img {
+        width: max(10vw, 6vh);
+        padding: 5px;
       }
-      .schedules .match {
-        background-color: white;
-        border-radius: 10px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 20vh;
-        height: 15vh;
-        margin: 5vh 3vh 5vh 3vh;
+      span {
+        display: inline-block;
       }
-      .schedules .matchDate {
-        margin: 0 auto;
-        font-size: 1vmax;
+      .site-logo {
+        vertical-align: middle;
       }
-      .schedules .matchRival {
-        margin: 0 auto;
-        display: flex;
-        margin-bottom: 10px;
-        font-weight: 900;
-        font-size: 1.7vmax;
+      .account {
+        vertical-align: middle;
+        color: #fafafa;
+        font-size: 30px;
+        font-family: monospace;
+        padding-left: 12px;
       }
-      .schedules .matchStatus {
-        margin: 0 auto;
-        color: #00000090;
-        padding: 0vmax 0.6vmax 0vmax 0.6vmax;
-        background-color: #f5f5f5;
-        border: solid 1px transparent;
-        border-color: #d9d9d9;
-        border-radius: 10px;
-        font-weight: 500;
-        font-size: 1.4vmax;
+      .sns_list {
+          padding-top: 5vh;
+          padding-bottom: 5vh;
       }
-      .matchStatus.finished {
-        background-color: #aaa;
+      .sns {
+        padding: 1vh;
       }
     </style>
   </head>
@@ -105,17 +82,36 @@
         <div class="big">HARUWIN</div>
         <div class="sub">Est. 2021</div>
       </div>
-      <div class="schedules">
-
-        <div class="match">
-          <div class="matchDate">2021.10.24</div>
-          <div class="matchRival">vs 乌合之从</div>
-          <div class="matchStatus finished">已结束</div>
+      <div class="sns_list">
+        <div class="sns">
+          <span class="site-logo">
+            <img src="xhs_logo.png" />
+          </span>
+          <span class="account">@Haruwin女子足球队</span>
         </div>
-        <div class="match">
-          <div class="matchDate">2021.10.31</div>
-          <div class="matchRival">vs 鸟舍之人</div>
-          <div class="matchStatus unfinished">未开始</div>
+        <div class="sns">
+          <span class="site-logo">
+            <img src="weibo_logo.png" />
+          </span>
+          <span class="account">@HARUWIN女子足球队</span>
+        </div>
+        <div class="sns">
+          <span class="site-logo">
+            <img src="ins_logo.png" />
+          </span>
+          <span class="account">@haruwinofficial</span>
+        </div>
+        <div class="sns">
+          <span class="site-logo">
+            <img src="jike_logo.png" />
+          </span>
+          <span class="account">@Haruwin_official</span>
+        </div>
+        <div class="sns">
+          <span class="site-logo">
+            <img src="ytb_logo.png" />
+          </span>
+          <span class="account">@HaruwinTheFootballTeam</span>
         </div>
       </div>
     </div>
