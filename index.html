@@ -38,7 +38,7 @@
       .logo {
         width: 20vh;
         border-radius: 50%;
-        border: 10px solid #333;
+        /* border: 10px solid #333; */
       }
       .main {
         max-width: 800px;
@@ -67,11 +67,27 @@
         padding-left: 12px;
       }
       .sns_list {
-          padding-top: 5vh;
-          padding-bottom: 5vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
       }
       .sns {
         padding: 1vh;
+      }
+      .account .account_qrcode {
+        visibility: hidden;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+      .account_qrcode img{
+        width: 300px;
+      }
+      .account a{
+        color: white;
+      }
+      .account:hover .account_qrcode {
+        visibility: visible;
       }
     </style>
   </head>
@@ -93,25 +109,37 @@
           <span class="site-logo">
             <img src="weibo_logo.png" />
           </span>
-          <span class="account">@HARUWIN女子足球队</span>
+          <span class="account">@HARUWIN女子足球队<span class="account_qrcode"><img src="weibo_qrcode.jpeg" /></span></span>
+          
         </div>
         <div class="sns">
           <span class="site-logo">
             <img src="ins_logo.png" />
           </span>
-          <span class="account">@haruwinofficial</span>
+          <span class="account"><a href="https://www.instagram.com/haruwinofficial/">@haruwinofficial</a></span>
         </div>
         <div class="sns">
           <span class="site-logo">
             <img src="jike_logo.png" />
           </span>
-          <span class="account">@Haruwin_official</span>
+          <span class="account">@Haruwin_unofficial
+            <span class="account_qrcode"><img src="jike_qrcode.jpeg" />
+          </span>
         </div>
         <div class="sns">
           <span class="site-logo">
             <img src="ytb_logo.png" />
           </span>
-          <span class="account">@HaruwinTheFootballTeam</span>
+          <span class="account"><a href="https://www.youtube.com/channel/UCP8QU_WPa6a1TfX19nkExbg">@HaruwinTheFootballTeam</a></span>
+        </div>
+        <div class="sns">
+          <span class="site-logo">
+            <img src="wechat_logo.png" />
+          </span>
+          <span class="account"
+            >Haruwin女子足球队
+            <span class="account_qrcode"><img src="wechat_qrcode.jpeg" /></span>
+          </span>
         </div>
       </div>
     </div>
