@@ -1,0 +1,9 @@
+- The main tech stack of this project is React.js + Tailwind
+- This project will be deployed on Vercel
+- The site is for a women football team internal use.
+- Main features:
+  - Team intro
+  - Players info
+  - Training / Matches records
+  - Regular Activity Sign-up
+- The language of the site should be Simplified Chinese 
